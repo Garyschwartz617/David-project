@@ -23,8 +23,9 @@ changeColor.addEventListener("click", async () => {
     console.log('yellow')
     let runSearch = async () =>{
         // I WANT THIS TO GET THE YOUTUBES FIRST DIV NOT THE ORIGINAL PAGE
+
         let response = await window.open("https://www.youtube.com/results?search_query=chrome+extension+an+beautifulsoup")
-        let data = await window.getElementsByTagName("div")[0]
+        let data = await document.getElementsByTagName("div")[0]
         console.log(data)
     }
     runSearch()
